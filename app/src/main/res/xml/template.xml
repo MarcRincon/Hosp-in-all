@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="pref-cont"
+    android:key="first_preferencescreen">
+
+    <PreferenceCategory
+        android:title="Rendering Settings">
+
+        <PreferenceScreen
+            android:key="texture_prefs"
+            android:title="Texture Settings">
+            <EditTextPreference
+                android:defaultValue="Default value"
+                android:key="edit_text_preference_1"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:title="Edit text preference" />
+            <CheckBoxPreference
+                android:key="texture"
+                android:title="Texture"
+                android:summary="Draws landscape with a texture."
+                android:defaultValue="true"
+                android:persistent="true"/>
+            <CheckBoxPreference
+                android:key="lodTexture"
+                android:title="Level of Detail - Texture"
+                android:summary="In Big World mode, causes far-off objects to use simpler texture map"
+                android:defaultValue="true"
+                android:persistent="true"/>
+            <CheckBoxPreference
+                android:key="textureMips"
+                android:title="Use Hardware Mipmaps"
+                android:summary="Implements level-of-detail textures with mipmaps."
+                android:defaultValue="true"
+                android:persistent="true"/>
+            <CheckBoxPreference
+                android:key="lodTextureColored"
+                android:title="Use Colored Textures"
+                android:summary="Sets each LOD texture to a different color to help visualization"
+                android:defaultValue="false"
+                android:persistent="true"/>
+            <ListPreference
+                android:key="maxTextureSize"
+                android:title="Max Texture Size"
+                android:summary="Change the maximum texture size."
+                android:entries="@array/updateInterval"
+                android:entryValues="@array/updateIntervalValues"
+                android:persistent="true"/>
+            <ListPreference
+                android:key="textureFiltering"
+                android:title="Texture Filtering"
+                android:summary="Change the type of texture filtering."
+                android:entries="@array/updateInterval"
+                android:entryValues="@array/updateIntervalValues"
+                android:persistent="true"/>
+        </PreferenceScreen>
+
+    </PreferenceCategory>
+    <ListPreference
+
+        android:defaultValue='1'
+        android:entries="@array/updateInterval"
+        android:entryValues="@array/updateInterval"
+        android:key="list_preference"
+        android:title="List preference" />
+
+</PreferenceScreen>

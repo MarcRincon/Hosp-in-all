@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_gallery"
+                android:icon="@drawable/ic_person_black_24dp"
+                android:title="Log In" />
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_airline_seat_flat_angled_black_24dp"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_send"
+            android:icon="@drawable/alarm_bell_24dp"
+            android:title="@string/menu_send" />
+
+        <item
+            android:id="@+id/nav_tools"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/menu_tools" />
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/ic_cached_black_24dp"
+            android:title="Generar ID Hex" />
+
+    </group>
+
+    <!--
+    <item android:title="Communicate">
+        <menu>
+
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/alarm_bell_24dp"
+                android:title="@string/menu_send" />
+        </menu>
+    </item>
+-->
+</menu>

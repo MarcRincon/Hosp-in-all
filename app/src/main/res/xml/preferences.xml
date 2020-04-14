@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:keepScreenOn="true">
+    <!--https://developer.android.com/guide/topics/ui/settings -->
+    <PreferenceCategory android:title="Configuración de usuario y database">
+
+        <EditTextPreference
+            android:defaultValue="jdbc:jtds:sqlserver://192.168.10.104/"
+            android:key="url_db"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Url de la database" />
+        <EditTextPreference
+            android:defaultValue="000000"
+            android:key="tabletID"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="ID del disposiivo" />
+        <EditTextPreference
+            android:defaultValue="Tablet1"
+            android:key="tabletName"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Nombre del dispositivo" />
+        <EditTextPreference
+            android:defaultValue="databaseName"
+            android:key="name_db"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Nombre de la database" />
+
+
+
+        <!--   <EditTextPreference
+               android:defaultValue="Benvingut"
+               android:key="preference_message"
+               android:selectAllOnFocus="true"
+               android:singleLine="true"
+               android:title="Posar missatge benvinguda" />
+           <EditTextPreference
+               android:defaultValue="Benvingut"
+               android:key="preference_message"
+               android:selectAllOnFocus="true"
+               android:singleLine="true"
+               android:title="Posar missatge benvinguda" />
+
+              <MultiSelectListPreference
+                  android:entries="@array/pelis"
+                  android:entryValues="@array/codipelis"
+                  android:key="pref_multilist"
+                  android:title="@string/multilistTitle"
+                  /> -->
+        <!--
+                <ListPreference
+                    android:entries="@array/pais"
+                    android:entryValues="@array/codipais"
+                    android:key="pais"
+                    android:title="Pais"  />-->
+
+        <!-- https://developer.android.com/reference/androidx/preference/SwitchPreferenceCompat
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="preference_color"
+            android:summaryOff="El color serà verd"
+            android:summaryOn="El color serà blau"
+            android:title="Color" />
+
+        <CheckBoxPreference
+            android:key="sound"
+            android:summary="So activat"
+            android:title="So" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Altres">
+        <Preference android:title="Google">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="http://www.google.es"
+                android:title="Pàgina web" />
+        </Preference>
+        <Preference android:title="EdT">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="http://www.escoladeltreball.org"
+                android:title="Pàgina web" />
+        </Preference>
+        - This preference simply launches an intent when selected. Use this UI sparingly, per
+                         design guidelines.
+        <Preference android:title="prefs sistema">
+            <intent android:action="android.settings.SYNC_SETTINGS" />
+        </Preference> -->
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
